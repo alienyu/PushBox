@@ -1,9 +1,8 @@
 !!!5
 %html
   %head
-    %title PushBox
-    = stylesheet_link_tag    "application"
-    = javascript_include_tag "application"
-    = csrf_meta_tags
+    = render :partial => 'layouts/application_style'
+
   %body
     = yield
+    = render :partial => 'layouts/application_end_of_body'
