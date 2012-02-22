@@ -6,3 +6,4 @@ tmp/
 .idea
 .DS
 .rvmrc
+.idea/workspace.xml
