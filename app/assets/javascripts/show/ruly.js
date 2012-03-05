@@ -66,7 +66,7 @@ pushBox={
                 }
             }
         };
-        this.wall=[];this.ground=[];this.boy=[];this.box=[];this.target=[];
+        this.wall=[];this.boy=[];this.box=[];this.target=[];
         /*
          将每一关wall的string表示法转换成数组表示
          */
@@ -74,14 +74,14 @@ pushBox={
         for (var i=0,tmp=[];i<wall.length;i++ )
             for (var j=0;j<wall[i].length;j++ )
                 tmp.push([i,parseInt('0x'+wall[i].charAt(j))]);
-        var ground=pbMap[this.ini.level].ground.split(',');
-        for (var i=0,gd=[];i<ground.length;i++ )
-            for (var j=0;j<ground[i].length;j++ )
-                gd.push([i,parseInt('0x'+ground[i].charAt(j))]);
-        this.setScene(tmp,'wall',this.wall);
-        this.setScene(gd,'ground',this.ground);
-        this.setScene(pbMap[this.ini.level].target,'target',this.target);
-        this.setScene(pbMap[this.ini.level].box,'box',this.box);
+//        var ground=pbMap[this.ini.level].ground.split(',');
+//        for (var i=0,gd=[];i<ground.length;i++ )
+//            for (var j=0;j<ground[i].length;j++ )
+//                gd.push([i,parseInt('0x'+ground[i].charAt(j))]);
+//        this.setScene(tmp,'wall',this.wall);
+////        this.setScene(gd,'ground',this.ground);
+//        this.setScene(pbMap[this.ini.level].target,'target',this.target);
+//        this.setScene(pbMap[this.ini.level].box,'box',this.box);
         this.setScene(pbMap[this.ini.level].boy,'boy',this.boy);
     }
     /*
