@@ -1,5 +1,5 @@
 pbMap=[
-    { wall:'234,24,24567,0127,0567,01235,35,345',               ground:',3,3'
+    { wall:'234,24,24567,0127,0567,01235,35,345'
         ,boy:[[4,4]],box:[[3,3],[3,5],[4,3],[5,4]],             target:[[4,1],[1,3],[3,6],[6,4]]
     }
     ,{ wall:'01234,04,04678,0468,0124568,128,158,15678,12345'
@@ -78,10 +78,10 @@ pushBox={
 //        for (var i=0,gd=[];i<ground.length;i++ )
 //            for (var j=0;j<ground[i].length;j++ )
 //                gd.push([i,parseInt('0x'+ground[i].charAt(j))]);
-//        this.setScene(tmp,'wall',this.wall);
-////        this.setScene(gd,'ground',this.ground);
-//        this.setScene(pbMap[this.ini.level].target,'target',this.target);
-//        this.setScene(pbMap[this.ini.level].box,'box',this.box);
+        this.setScene(tmp,'wall',this.wall);
+//        this.setScene(gd,'ground',this.ground);
+        this.setScene(pbMap[this.ini.level].target,'target',this.target);
+        this.setScene(pbMap[this.ini.level].box,'box',this.box);
         this.setScene(pbMap[this.ini.level].boy,'boy',this.boy);
     }
     /*
